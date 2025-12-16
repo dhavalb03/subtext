@@ -672,3 +672,89 @@ may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <https://www.gnu.org/licenses/why-not-lgpl.html>.
+
+
+
+Copyright (c) 2025 Dhaval Balsara
+All rights reserved.
+
+--------------------------------------------------
+
+Acceptance
+
+By using, copying, modifying, accessing, or hosting the Software, you agree
+to all terms of this license.
+
+--------------------------------------------------
+
+Grant of License
+
+The Licensor grants you a non-exclusive, royalty-free, worldwide,
+non-transferable, non-sublicensable license to use and modify the Software
+solely as expressly permitted herein.
+
+--------------------------------------------------
+
+Permitted Use
+
+You may:
+- Use the Software for personal, educational, or non-commercial purposes
+- Modify the Software for personal learning or evaluation
+- Submit modifications to the Licensor for possible inclusion
+
+--------------------------------------------------
+
+Prohibited Use
+
+You may NOT, directly or indirectly:
+- Use the Software for any Commercial Use
+- Use the Software to provide services or deliverables to third parties
+- Use the Software to generate content for paying or revenue-generating clients
+- Offer the Software as a hosted service, SaaS, API, or platform
+- Sell, license, sublicense, rent, monetize, or commercially exploit the Software
+- Redistribute, mirror, host, or publicly fork the Software or derivative works
+- Create, offer, or assist in creating a Competing Product or Service
+- Extract or reuse prompts, workflows, or logic for commercial purposes
+- Remove or alter license, copyright, or attribution notices
+
+--------------------------------------------------
+
+Distribution
+
+Any form of distribution, including public hosting or forking, is prohibited
+without explicit written permission from the Licensor.
+
+--------------------------------------------------
+
+Branding and Attribution
+
+This license grants no rights to use the Licensor’s name, trademarks, or
+branding. Modified versions may not be represented as the original Software.
+
+--------------------------------------------------
+
+Definitions
+
+“Commercial Use” means any use that directly or indirectly generates revenue,
+supports revenue-generating activity, enhances a paid product or service, or
+is performed within or for the benefit of an entity engaged in commercial
+activities.
+
+“Competing Product or Service” means any software or service that provides
+substantially similar functionality, including automated generation of
+LinkedIn comments or engagement content, regardless of implementation.
+
+--------------------------------------------------
+
+Termination
+
+Any violation of this license results in immediate and permanent termination
+of all rights granted herein.
+
+--------------------------------------------------
+
+Disclaimer
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND.
+THE LICENSOR SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING FROM USE.
+
