@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtext</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="icon.png" alt="Subtext" class="logo-icon">
+                <h1>Subtext</h1>
+            </div>
+            <p class="tagline">LinkedIn Comment Generator</p>
+        </div>
+
+        <div class="main">
+            <!-- API Configuration -->
+            <div class="section" id="api-section">
+                <h3>API Configuration</h3>
+
+                <label for="api-provider">AI Provider:</label>
+                <select id="api-provider">
+                    <option value="gemini">Google Gemini</option>
+                    <option value="groq" selected>Groq (Free Tier)</option>
+                </select>
+
+                <div id="gemini-api-section" style="display: none;">
+                    <input type="password" id="api-key" placeholder="Enter your Gemini API Key" />
+                    <small class="api-help">Get your key from <a href="https://aistudio.google.com/"
+                            target="_blank">Google AI Studio</a></small>
+                </div>
+
+                <div id="groq-api-section">
+                    <input type="password" id="groq-api-key" placeholder="Enter your Groq API Key" />
+                    <small class="api-help">🆓 Free tier available! Get your key from <a
+                            href="https://console.groq.com/" target="_blank">Groq Console</a></small>
+                </div>
+
+                <button id="save-api">Save API Key</button>
+            </div>
+
+            <!-- Your Profile (Manual Input) -->
+            <div class="section" id="profile-section">
+                <h3>Your Profile</h3>
+                <small class="section-help">This helps generate personalized comments that position you as an
+                    expert.</small>
+
+                <div class="profile-form">
+                    <input type="text" id="profile-name" placeholder="Your Name (e.g., John Smith)" />
+                    <input type="text" id="profile-role" placeholder="Your Role (e.g., Automation Consultant)" />
+                    <input type="text" id="profile-expertise"
+                        placeholder="Expertise Tags (e.g., AI, Automation, B2B)" />
+                    <button id="save-profile" class="secondary-btn">Save Profile</button>
+                </div>
+
+                <div id="profile-display" class="profile-saved" style="display: none;">
+                    <span id="profile-summary"></span>
+                    <button id="edit-profile" class="text-btn">Edit</button>
+                </div>
+            </div>
+
+            <!-- Comment Settings -->
+            <div class="section" id="settings-section">
+                <h3>Comment Settings</h3>
+
+                <label>Comment Tone:</label>
+                <div class="tone-selector">
+                    <button class="tone-btn" data-tone="hot-take" title="Bold, contrarian opinion">
+                        🔥 Hot Take
+                    </button>
+                    <button class="tone-btn active" data-tone="insightful" title="Thoughtful perspective">
+                        💡 Insightful
+                    </button>
+                    <button class="tone-btn" data-tone="supportive" title="Agreement with added value">
+                        🤝 Supportive
+                    </button>
+                    <button class="tone-btn" data-tone="curious" title="Question-led engagement">
+                        ❓ Curious
+                    </button>
+                </div>
+
+                <label for="comment-length">Comment Length:</label>
+                <select id="comment-length">
+                    <option value="short">Short (1-2 sentences)</option>
+                    <option value="medium" selected>Medium (2-3 sentences)</option>
+                    <option value="detailed">Detailed (3-4 sentences)</option>
+                </select>
+            </div>
+
+            <!-- Generate Comment -->
+            <div class="section">
+                <h3>Generate Comment</h3>
+                <button id="generate-comment" class="primary-btn">Generate Comment for Current Post</button>
+                <div id="generated-comment" class="comment-display"></div>
+                <div id="comment-actions" style="display: none;">
+                    <button id="copy-comment" class="secondary-btn">📋 Copy</button>
+                    <button id="regenerate-comment" class="secondary-btn">🔄 Regenerate</button>
+                    <button id="post-comment" class="primary-btn">Post Comment</button>
+                </div>
+            </div>
+
+            <!-- Auto-Generate Toggle -->
+            <div class="section compact">
+                <label class="toggle-label">
+                    <input type="checkbox" id="auto-generate-on-click">
+                    <span>Auto-generate when clicking comment buttons on LinkedIn</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div id="status" class="status"></div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
