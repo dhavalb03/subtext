@@ -1,11 +1,11 @@
-# Custom CommenTron - LinkedIn Comment Generator
+# Subtext - LinkedIn Comment Generator
 
-An advanced Chrome extension that generates human-like, contextually relevant LinkedIn comments using Google's Gemini AI. Now with **Profile-Aware Commenting** for personalized, authentic interactions.
+An advanced Chrome extension that generates human-like, contextually relevant LinkedIn comments using Google's Gemini AI and Groq AI. Now with **Profile-Aware Commenting** for personalized, authentic interactions.
 
 ## 🚀 New Features
 
 ### Profile-Aware Comments
-- **Automatic Profile Detection**: Extract your LinkedIn profile information to make comments more personalized
+- **Profile Detection**: Extract your LinkedIn profile information to make comments more personalized
 - **Context-Aware Responses**: Comments reference your experience, skills, and professional background when relevant
 - **Smart Relevance**: Only incorporates profile data when it naturally fits the conversation
 - **Privacy Focused**: Profile data is stored locally in your browser and never shared
