@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApn4m/Hd3ag4Ib6kNA2+APyk9l0rxLyzFj6owiSIFfLP117Q9gX+I2XIh3Z7p4OT/jaxClvZonZk3JbNZxi1RAIynRyoJiJzKQE4HEmDoVVqAvIOoqvXEy3hYmCqXulB7L8ZbAMEc39EWyhICX1ulPNtTgj3j76VeLCvBSZebBMI07N8eblIGj1sn2vEniyUAfBLzipQ6++gf9G8tdA9hL4IhuhAo38YJiq+gPJkmJHxwWTjow5jA6d3BvlbmbGXDRDlXBgivJPFOVOI1l/7SVRzk3SaJoQTwH5jCXJHR4FpU6lgRDxhy8t0j6mIgYQ3KXAZxFivHy/vuq4vqAZLbqwIDAQAB",
+  "name": "Subtext - LinkedIn AI Comment Generator",
+  "version": "3.0.0",
+  "description": "AI-powered LinkedIn comment generator for building your personal brand",
+  "host_permissions": [
+    "https://www.linkedin.com/*",
+    "https://generativelanguage.googleapis.com/*",
+    "https://api.groq.com/*",
+    "https://*.supabase.co/*",
+    "https://accounts.google.com/*"
+  ],
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab",
+    "notifications",
+    "identity"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Subtext",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}

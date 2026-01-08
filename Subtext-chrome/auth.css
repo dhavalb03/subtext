@@ -1,0 +1,98 @@
+/* Auth UI Styles */
+#auth-section {
+    display: none; /* Hidden by default */
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#auth-section.visible {
+    display: flex;
+}
+
+.auth-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 300px;
+}
+
+.auth-header h2 {
+    color: #0A66C2;
+    margin-bottom: 10px;
+}
+
+.auth-header p {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 25px;
+}
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #fff;
+    color: #3c4043;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.google-btn:hover {
+    background-color: #f7f8f8;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.google-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.auth-footer {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #999;
+}
+
+.auth-footer a {
+    color: #666;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Logout Button in Header */
+.logout-btn {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.logout-btn:hover {
+    color: #d11124;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto; /* Push to right */
+}
